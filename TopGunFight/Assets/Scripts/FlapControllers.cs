@@ -8,6 +8,7 @@ public class FlapControllers : MonoBehaviour
     public float minAngle = -35f; // Ângulo mínimo
     public float maxAngle = 35f; // Ângulo máximo
     private float currentAngle = 0f; // Ângulo atual
+    [SerializeField] private Vector3 direction;
 
     // Update is called once per frame
     void Update()
@@ -24,7 +25,9 @@ public class FlapControllers : MonoBehaviour
         // Limitando o ângulo de rotação.
         currentAngle = Mathf.Clamp(currentAngle, minAngle, maxAngle);
 
+
         //Aplicando a rotação ao objeto.
         transform.localRotation = Quaternion.Euler(currentAngle, 0f, 0f);
+        
     }
 }
