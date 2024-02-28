@@ -425,8 +425,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88dc87923448c2f42a7ba936ef3a6350, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flySpeed: 4
-  yawAmount: 240
+  flySpeed: 10
+  yawAmount: 300
 --- !u!1 &1601102842765184555
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,7 +18,7 @@ public class Atirar : MonoBehaviour
     private void Update()
     {
         //Verifica se a tecla M esta precionada
-        if(Input.GetKey(KeyCode.M))
+        if(Input.GetKey(KeyCode.Space))
         {
             //incrmente o tempo do tiro
             tempo += Time.deltaTime;

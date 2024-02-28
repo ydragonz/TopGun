@@ -19,8 +19,6 @@ public class MoveController : MonoBehaviour
         //recebendo os imputs
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
-        Debug.Log(horizontalInput);
-        Debug.Log(verticalInput);
 
         // yaw, pitch, roll
         yaw += horizontalInput * yawAmount * Time.deltaTime;
