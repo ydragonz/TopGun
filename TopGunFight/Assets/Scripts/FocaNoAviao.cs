@@ -1,22 +1,48 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class FocaNoAviao : MonoBehaviour
 {
-    public Transform aviao; // O objeto em movimento que queremos focar
-    public float velocidadeRotacao = 5.0f; // Velocidade de rotação
+    [Header("Configurações do avião")]
+    [SerializeField]public Transform aviao;   
+    [SerializeField]public float velocidadeRotacao = 5.0f;
+
+    [Header("Configurações de menssage")]
+    [SerializeField]private string message = "Derrubando o inimigo";
+    private bool mensagemMostrada = false;
 
     private void Update()
     {
-        // Calcula a direção do objeto em movimento em relação a este objeto
-        Vector3 directionToTarget = aviao.position - transform.position;
+        VerificaAlturaDoAviao();
+    }
 
-        // Calcula a rotação necessária para olhar para o objeto em movimento
-        Quaternion targetRotation = Quaternion.LookRotation(directionToTarget);
+    private void Atirar()
+    {
+        Debug.Log(message);
+    }
+    private void VerificaAlturaDoAviao()
+    {
+        if (aviao != null)
+        {
+            TorpedoSegueAviao();
+            float alturaDoTorpedo = transform.position.y;
+            float alturaDoAviao = aviao.position.y;
 
-        // Interpola suavemente a rotação atual para a rotação desejada
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, velocidadeRotacao * Time.deltaTime);
+            if (alturaDoAviao >= alturaDoTorpedo && !mensagemMostrada)
+            {
+                Debug.Log(message);
+                mensagemMostrada = true;
+            }
+        }
+    }
+    /// <summary>
+    /// Aqui o torpedo ira ficar olhando para o aviao.
+    /// </summary>
+    private void TorpedoSegueAviao()
+    {
+        transform.LookAt(aviao);
     }
 }
 
