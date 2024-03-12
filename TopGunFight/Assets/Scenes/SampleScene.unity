@@ -152,7 +152,7 @@ Transform:
   m_GameObject: {fileID: 2036560}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.9236012, z: -1.3408012}
+  m_LocalPosition: {x: 0, y: -11.45, z: -1.3408012}
   m_LocalScale: {x: 1.5544, y: 3.1230001, z: 1.826}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1277,6 +1277,7 @@ GameObject:
   - component: {fileID: 287551392}
   - component: {fileID: 287551391}
   - component: {fileID: 287551390}
+  - component: {fileID: 287551393}
   m_Layer: 0
   m_Name: Pilar (2)
   m_TagString: Untagged
@@ -1293,7 +1294,7 @@ Transform:
   m_GameObject: {fileID: 287551388}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -3.9863987, z: 0}
   m_LocalScale: {x: 0.5269416, y: 0.72422373, z: 4.5074806}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1370,6 +1371,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 287551388}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &287551393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287551388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3984f0121122a7e42999deb6f9a9114a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetAviao: {fileID: 1357975726}
+  velocidadeVisor: 10
+  velocidadeBala: 100
+  bala: {fileID: 1919477699067609481, guid: 0c70dd2f461ebb64d8e7ef57840e5426, type: 3}
+  cano: {fileID: 287551389}
+  intervalo: 0.1
+  "for\xE7aBala": 2
 --- !u!1 &288014935
 GameObject:
   m_ObjectHideFlags: 0
@@ -1505,13 +1525,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.21736343, y: -0.33256754, z: 0.0931849, w: 0.91294503}
-  m_LocalPosition: {x: 23.9, y: 20.5, z: -29.1}
+  m_LocalRotation: {x: 0.30095893, y: -0.12936987, z: 0.05026887, w: 0.94348305}
+  m_LocalPosition: {x: 8.48, y: 29.1, z: -34.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 27.314, y: -39.631, z: 1.649}
+  m_LocalEulerAnglesHint: {x: 35.514, y: -15.232, z: 1.196}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1823,7 +1843,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -12.484807, z: -1.3408012}
-  m_LocalScale: {x: 4, y: 18, z: 4}
+  m_LocalScale: {x: 4, y: 22.113, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 594184989}
@@ -1869,7 +1889,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d9866972794ae7f4bb647cfb252c5f09, type: 2}
+  - {fileID: 2100000, guid: f0ceac89484e2264eb0b4625ed7d1698, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2549,7 +2569,7 @@ Transform:
   m_GameObject: {fileID: 560470626}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.9236012, z: -1.3408012}
+  m_LocalPosition: {x: 0, y: -0.04, z: -1.3408012}
   m_LocalScale: {x: 1.5544, y: 3.1230001, z: 1.826}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2938,6 +2958,7 @@ GameObject:
   - component: {fileID: 653426229}
   - component: {fileID: 653426228}
   - component: {fileID: 653426227}
+  - component: {fileID: 653426231}
   m_Layer: 0
   m_Name: Pilar (2)
   m_TagString: Untagged
@@ -3031,6 +3052,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1220041738}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &653426231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653426226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3984f0121122a7e42999deb6f9a9114a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetAviao: {fileID: 1357975726}
+  velocidadeVisor: 10
+  velocidadeBala: 100
+  bala: {fileID: 1919477699067609481, guid: 0c70dd2f461ebb64d8e7ef57840e5426, type: 3}
+  cano: {fileID: 653426230}
+  intervalo: 0.1
+  "for\xE7aBala": 2
 --- !u!1 &691129289
 GameObject:
   m_ObjectHideFlags: 0
@@ -3624,6 +3664,7 @@ GameObject:
   - component: {fileID: 875994747}
   - component: {fileID: 875994746}
   - component: {fileID: 875994745}
+  - component: {fileID: 875994748}
   m_Layer: 0
   m_Name: Pilar (2)
   m_TagString: Untagged
@@ -3640,7 +3681,7 @@ Transform:
   m_GameObject: {fileID: 875994743}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.8836002, z: 0}
   m_LocalScale: {x: 0.5269416, y: 0.72422373, z: 4.5074806}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3717,6 +3758,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 875994743}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &875994748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875994743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3984f0121122a7e42999deb6f9a9114a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetAviao: {fileID: 1357975726}
+  velocidadeVisor: 10
+  velocidadeBala: 100
+  bala: {fileID: 1919477699067609481, guid: 0c70dd2f461ebb64d8e7ef57840e5426, type: 3}
+  cano: {fileID: 875994744}
+  intervalo: 0.1
+  "for\xE7aBala": 2
 --- !u!1 &894847772
 GameObject:
   m_ObjectHideFlags: 0
@@ -4249,8 +4309,8 @@ Transform:
   m_GameObject: {fileID: 1043528311}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -12.484807, z: -1.3408012}
-  m_LocalScale: {x: 4, y: 18, z: 4}
+  m_LocalPosition: {x: 0, y: -17.53, z: -1.3408012}
+  m_LocalScale: {x: 4, y: 9.359644, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1635799394}
@@ -4354,8 +4414,8 @@ Transform:
   m_GameObject: {fileID: 1075184997}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -12.484807, z: -1.3408012}
-  m_LocalScale: {x: 4, y: 18, z: 4}
+  m_LocalPosition: {x: 0, y: -14.58, z: -1.3408012}
+  m_LocalScale: {x: 4, y: 14.501341, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1574612874}
@@ -5200,6 +5260,7 @@ GameObject:
   - component: {fileID: 1640345092}
   - component: {fileID: 1640345091}
   - component: {fileID: 1640345090}
+  - component: {fileID: 1640345093}
   m_Layer: 0
   m_Name: Pilar (2)
   m_TagString: Untagged
@@ -5216,7 +5277,7 @@ Transform:
   m_GameObject: {fileID: 1640345088}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -9.526399, z: 0}
   m_LocalScale: {x: 0.5269416, y: 0.72422373, z: 4.5074806}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5293,6 +5354,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1640345088}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1640345093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640345088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3984f0121122a7e42999deb6f9a9114a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetAviao: {fileID: 1357975726}
+  velocidadeVisor: 10
+  velocidadeBala: 100
+  bala: {fileID: 1919477699067609481, guid: 0c70dd2f461ebb64d8e7ef57840e5426, type: 3}
+  cano: {fileID: 1640345089}
+  intervalo: 0.1
+  "for\xE7aBala": 2
 --- !u!1 &1644938872
 GameObject:
   m_ObjectHideFlags: 0
@@ -5836,7 +5916,7 @@ Transform:
   m_GameObject: {fileID: 1767811963}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.9236012, z: -1.3408012}
+  m_LocalPosition: {x: 0, y: -5.91, z: -1.3408012}
   m_LocalScale: {x: 1.5544, y: 3.1230001, z: 1.826}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6981,7 +7061,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3ff2ee879546cf243b6d214408ea074c, type: 2}
+  - {fileID: 2100000, guid: 3fc9edd1fe5dc224490a490af6463148, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7088,6 +7168,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AirPlaneController
+      objectReference: {fileID: 0}
+    - target: {fileID: 4156141440560156391, guid: 968e77a46c8b8294391f302d0dc9d46e,
+        type: 3}
+      propertyPath: flySpeed
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5564584827147984786, guid: 968e77a46c8b8294391f302d0dc9d46e,
         type: 3}
